@@ -1,0 +1,16 @@
+RENDER SETUP — ChatGPT v2612
+
+Build Command:
+npm install
+
+Start Command:
+npm start
+
+No environment variables are required for this version.
+
+After pushing these files to GitHub:
+1. In Render, open your existing Web Service.
+2. Manual Deploy -> Deploy latest commit.
+3. Wait for Live.
+4. Open the Render-provided .onrender.com URL.
+5. Host page: the same URL + /host.html

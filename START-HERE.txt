@@ -1,0 +1,28 @@
+CHATGPT v2612 — LOCAL PC SERVER
+
+User:
+http://localhost:3000
+
+Host:
+http://localhost:3000/host.html
+
+No host key or password is required.
+
+Run:
+npm install
+npm start
+
+The server stores host-side messages in messages.json.
+
+INTERNET TESTING:
+1. Start this app with: npm start
+2. Install cloudflared from Cloudflare's official download page.
+3. Open a SECOND terminal window.
+4. Run:
+   cloudflared tunnel --url http://localhost:3000
+5. Cloudflare will print a temporary https://...trycloudflare.com URL.
+6. Share that URL with the intended user.
+
+Keep BOTH terminal windows running. The public URL stops working when you stop the cloudflared process.
+
+The temporary Quick Tunnel is for testing/development. For a permanent public address, use a named Cloudflare Tunnel.
